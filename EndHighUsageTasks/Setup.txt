@@ -1,0 +1,14 @@
+﻿// command to create service
+sc create "EndHighUsageTasks" binPath= "D:\Services\EndHighUsageTasks\EndHighUsageTasks.exe"
+
+// command to start service
+sc start EndHighUsageTasks
+
+// command to check if the service installed and running 
+sc query EndHighUsageTasks
+
+// command to update the service config
+sc config EndHighUsageTasks start= auto
+
+// command to delete service
+sc delete EndHighUsageTasks
