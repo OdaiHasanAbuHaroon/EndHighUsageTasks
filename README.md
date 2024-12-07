@@ -1,5 +1,11 @@
 # EndHighUsageTasks Windows Service
 
+## Table of Contents
+- [Overview](#overview)
+- [Key Features](#key-features)
+- [Design Patterns Used](#design-patterns-used)
+- [Project Architecture](#project-architecture)
+
 ## Overview
 The **EndHighUsageTasks** Windows Service is built using .NET Core 8 and is designed to monitor and manage system processes to prevent memory overutilization. It runs as a background service, periodically evaluating processes and taking actions to ensure system stability and resource efficiency.
 
