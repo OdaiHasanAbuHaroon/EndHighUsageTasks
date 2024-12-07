@@ -77,3 +77,7 @@ Encapsulates email-sending logic in the `CommunicationService`, allowing easy ex
    ```bash
    git clone https://github.com/YourUsername/EndHighUsageTasks.git
    cd EndHighUsageTasks
+
+---
+
+Feel free to modify the content to suit your project's unique setup and requirements!
