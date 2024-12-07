@@ -1,11 +1,11 @@
 # 🛠️ EndHighUsageTasks Windows Service
 
 ## 📋 Table of Contents
-- [📖 Overview](#overview)
-- [✨ Key Features](#key-features)
-- [🧩 Design Patterns Used](#design-patterns-used)
-- [🏗️ Project Architecture](#project-architecture)
-- [🚀 How to Use](#how-to-use)
+- [📖 Overview](#-overview)
+- [✨ Key Features](#-key-features)
+- [🧩 Design Patterns Used](#-design-patterns-used)
+- [🏗️ Project Architecture](#-project-architecture)
+- [🚀 How to Use](#-how-to-use)
 
 ---
 
@@ -114,5 +114,4 @@ Follow these steps to set up and run the **EndHighUsageTasks** Windows Service:
 
 ---
 
-Feel free to modify the steps or expand them to suit your specific setup!
-
+Feel free to modify the content to suit your project's unique setup and requirements!
