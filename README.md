@@ -73,11 +73,46 @@ Encapsulates email-sending logic in the `CommunicationService`, allowing easy ex
 
 ## 🚀 How to Use
 
-1. 📂 **Clone the repository**:
-   ```bash
-   git clone https://github.com/YourUsername/EndHighUsageTasks.git
-   cd EndHighUsageTasks
+Follow these steps to set up and run the **EndHighUsageTasks** Windows Service:
+
+1. **📂 Clone the Repository**
+   - Clone the repository to your local machine:
+     ```bash
+     git clone https://github.com/YourUsername/EndHighUsageTasks.git
+     cd EndHighUsageTasks
+     ```
+
+2. **⚙️ Configure the Settings**
+   - Open the `appsettings.json` file.
+   - Define the tasks by specifying process names and memory limits under the `TaskNameSizeList` key.
+   - Configure the email settings for notifications, such as SMTP server, sender, and recipient details.
+
+3. **🛠️ Build the Service**
+   - Build the service using Visual Studio or the .NET CLI:
+     ```bash
+     dotnet publish -c Release
+     ```
+
+4. **🔧 Install the Service**
+   - Open a terminal as Administrator.
+   - Use the `sc` command to install the service:
+     ```bash
+     sc create "EndHighUsageTasks" binPath= "<path-to-published-executable>"
+     ```
+   - Start the service:
+     ```bash
+     sc start "EndHighUsageTasks"
+     ```
+
+5. **📜 Monitor Logs**
+   - Logs are generated in the directory configured in the `appsettings.json` file (e.g., `D:\Logs\EndHighUsageTasks\`).
+   - Use the logs to monitor process management activities and troubleshoot issues.
+
+6. **🔁 Test the Service**
+   - Verify the service is running and correctly monitoring processes.
+   - Confirm that email notifications are sent for terminated processes and all configurations are correctly applied.
 
 ---
 
-Feel free to modify the content to suit your project's unique setup and requirements!
+Feel free to modify the steps or expand them to suit your specific setup!
+
